@@ -1,8 +1,27 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+   ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+   <h1 class="display-4">Welcome</h1>
+   <h2> 2nd Grade Equation</h2>
+   <h4>project to determin the roots of an equation of 2 grade</h4>
+   <!-- <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> -->
 </div>
+
+<form>
+    @*
+        these comments are ONLY read on Visual Studio
+        - the <form> element sends the 'input' data to Server
+        - the 'id' atribute is read on browser
+        - the 'name' atribute is read on Server
+    *@
+   <div>
+      Write the parameters of Equation <br />
+      A: <input type="text" id="A" name="A" /><br />
+      B: <input type="text" name="B" /><br />
+      C: <input type="text" name="C" /><br />
+      <input type="submit" value="Calculate" />
+   </div>
+</form>
+
