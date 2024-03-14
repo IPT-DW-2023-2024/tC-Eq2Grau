@@ -10,12 +10,12 @@
 </div>
 
 <form>
-    @*
-        these comments are ONLY read on Visual Studio
-        - the <form> element sends the 'input' data to Server
-        - the 'id' atribute is read on browser
-        - the 'name' atribute is read on Server
-    *@
+   @*
+   these comments are ONLY read on Visual Studio
+   - the <form> element sends the 'input' data to Server
+   - the 'id' atribute is read on browser
+   - the 'name' atribute is read on Server
+   *@
    <div>
       Write the parameters of Equation <br />
       A: <input type="text" id="A" name="A" /><br />
@@ -25,3 +25,14 @@
    </div>
 </form>
 
+
+<div>
+   @*
+   the answer will appear here
+   *@
+
+    &nbsp;<br />
+    @ViewBag.Mensagem <br />
+    x1 = @ViewBag.X1 <br/>
+    x2 = @ViewBag.X2
+</div>
